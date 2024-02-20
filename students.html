@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="students.html">Estudiantes</a></li>
+            <li><a href="subjects.html">Materias</a></li>
+            <!-- Agrega aquí más enlaces según sea necesario -->
+        </ul>
+    </nav>
+
+    <h1>Estudiantes</h1>
+
+    <form id="add-student-form">
+        <form id="add-student-form">
+            <label for="firstname">Nombre:</label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+            <label for="lastname">Apellido:</label><br>
+            <input type="text" id="lastname" name="lastname" required><br>
+            <label for="avatar">Avatar:</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/*" required><br>
+            <label for="subject">Materia:</label><br>
+            <select id="subject" name="subject">
+                <!-- Las materias se agregarán aquí desde JavaScript -->
+            </select><br>
+            <label for="grade">Calificación:</label><br>
+            <input type="number" id="grade" name="grade" min="0" max="100" required><br>
+            <input type="submit" value="Registrar">
+            <input type="button" value="Cancelar" onclick="window.location.href='subjects.html';">
+    </form>
+
+    <div id="students-list">
+        <!-- Aquí se mostrarán los estudiantes y las materias a las que pertenecen -->
+    </div>
+
+    <script src="students.js"></script>
+</body>
+</html>

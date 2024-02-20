@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materias</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="students.html">Estudiantes</a></li>
+            <!-- Agrega aquí más enlaces según sea necesario -->
+        </ul>
+    </nav>
+
+    <h1>Materias</h1>
+
+    <form id="add-subject-form">
+        <label for="subject-name">Nombre de la materia:</label>
+        <input type="text" id="subject-name" name="subject-name" required>
+        <input type="submit" value="Agregar materia">
+    </form>
+
+    <div id="subjects-list">
+        <!-- Aquí se mostrarán las materias y los estudiantes que pertenecen a cada una -->
+    </div>
+
+    <script src="subjects.js"></script>
+</body>
+</html>
